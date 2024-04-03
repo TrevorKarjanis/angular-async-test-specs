@@ -41,4 +41,4 @@ The following are notes derived from these tests.
 - Nimble's `waitForUpdatesAsync` has two common issues.
   - In watch mode, `waitForUpdatesAsync` may timeout after a change and compile. Refresh the page to rerun the test.
   - non-fakeAsync tests can leak tasks that break calls to `waitForUpdatesAsync` for all subsequent tests.
-- There have been a few reports `ComponentFixture.whenStable` did not work and `waitForUpdatesAsync` was required in some obscure cases. However, the exact reason is not known.
+- There have been a few reported cases where `ComponentFixture.whenStable` did not work and `waitForUpdatesAsync` was required. However, the exact reason is not known.
